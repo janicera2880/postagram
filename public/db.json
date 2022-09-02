@@ -21,15 +21,32 @@
             "id": 1,
             "country": "Philippines",
             "city": "Bukidnon-Davao",
-            "caption": "Be Captivated By The Sonnen Berg Mountain View In Marilog",
+            "caption": "Be Captivated By The Sonnen Berg Sea Of Clouds",
             "category": [
                 "mountain"
             ],
-            "review": "Boracay has been highly celebrated in the international media as one of the best islands and having one of the best beaches in the world, including by Travel + Leisure Magazine, CNN, the New York Times Travel, and many others.",
+            "overview": "Sonnen Berg translates to sun mountain. The main view deck sits at 2,670 feet above the river valley and offers an epic mountain view.",
             "languages": "Tagalog, Bisaya",
             "currency": "Philippine Peso",
-            "weather": "With an average year-round temperature of 30°C, and an average humidity of 75%",
+            "weather": "Temperatures will vary between 21°C and 29°C",
             "image": "https://thumbs.dreamstime.com/b/boracay-sunset-beautiful-beaches-evening-philippines-35728249.jpg"
+                
+            
+        },
+
+        {
+            "id": 2,
+            "country": "Philippines",
+            "city": "Bohol",
+            "caption": "The Chocolate Hills",
+            "category": [
+                "mountain"
+            ],
+            "overview": "It is known that at the bare minimum there are 1268 unusually shaped hills located in the middle of the island of Bohol, but some estimates put this number as high as 1776.",
+            "languages": "Bisaya, Boholano",
+            "currency": "Philippine Peso",
+            "weather": "The coastal area of the province is warm in contrast with its interior which is colder especially during the night. Mean annual temperature is recorded at 27o C.",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Chocolate_Hills_overview.JPG/272px-Chocolate_Hills_overview.JPG"
                 
             
         }
