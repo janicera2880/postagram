@@ -1,0 +1,37 @@
+{
+    "postcards": [
+        {
+            "id": 0,
+            "country": "Philippines",
+            "city": "Boracay",
+            "caption": "The Insanely Beautiful Sunsets Of Boracay",
+            "category": [
+                "beach"
+            ],
+            "trivia": "Boracay has been highly celebrated in the international media as one of the best islands and having one of the best beaches in the world, including by Travel + Leisure Magazine, CNN, the New York Times Travel, and many others.",
+            "languages": "Tagalog, Aklanon",
+            "currency": "Philippine Peso",
+            "weather": "With an average year-round temperature of 30°C, and an average humidity of 75%",
+            "image": "https://thumbs.dreamstime.com/b/boracay-sunset-beautiful-beaches-evening-philippines-35728249.jpg"
+                
+            
+        },
+
+        {
+            "id": 1,
+            "country": "Philippines",
+            "city": "Bukidnon-Davao",
+            "caption": "Be Captivated By The Sonnen Berg Mountain View In Marilog",
+            "category": [
+                "mountain"
+            ],
+            "review": "Boracay has been highly celebrated in the international media as one of the best islands and having one of the best beaches in the world, including by Travel + Leisure Magazine, CNN, the New York Times Travel, and many others.",
+            "languages": "Tagalog, Bisaya",
+            "currency": "Philippine Peso",
+            "weather": "With an average year-round temperature of 30°C, and an average humidity of 75%",
+            "image": "https://thumbs.dreamstime.com/b/boracay-sunset-beautiful-beaches-evening-philippines-35728249.jpg"
+                
+            
+        }
+    ]
+}          
