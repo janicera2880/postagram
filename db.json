@@ -1,0 +1,224 @@
+{
+    "postcards": [
+        {
+            "id": 0,
+            "country": "Philippines",
+            "city": "Boracay",
+            "caption": "The Insanely Beautiful Sunsets Of Boracay",
+            "category": [
+                "Beach"
+            ],
+            "trivia": "Boracay has been highly celebrated in the international media as one of the best islands and having one of the best beaches in the world, including by Travel + Leisure Magazine, CNN, the New York Times Travel, and many others.",
+            "languages": "Tagalog, Aklanon",
+            "currency": "Philippine Peso",
+            "weather": "With an average year-round temperature of 30°C, and an average humidity of 75%",
+            "image": "https://boracayinformer.com/content/images/size/w1000/2021/01/ganda-ng-boracay-island-photo.jpg"
+                
+            
+        },
+
+        {
+            "id": 1,
+            "country": "Philippines",
+            "city": "Bukidnon-Davao",
+            "caption": "Be Captivated By The Sonnen Berg Sea Of Clouds",
+            "category": [
+                "Mountain"
+            ],
+            "trivia": "Sonnen Berg translates to sun mountain. The main view deck sits at 2,670 feet above the river valley and offers an epic mountain view.",
+            "languages": "Tagalog, Bisaya",
+            "currency": "Philippine Peso",
+            "weather": "Temperatures will vary between 21°C and 29°C",
+            "image": "https://vismin.ph/wp-content/uploads/2020/10/Calamba-Farm-Sea-of-Clouds-Davao-de-Oro-8.jpg"
+                
+            
+        },
+
+        {
+            "id": 2,
+            "country": "Philippines",
+            "city": "Bohol",
+            "caption": "The Chocolate Hills",
+            "category": [
+                "Mountain"
+            ],
+            "trivia": "It is known that at the bare minimum there are 1268 unusually shaped hills located in the middle of the island of Bohol, but some estimates put this number as high as 1776.",
+            "languages": "Bisaya, Boholano",
+            "currency": "Philippine Peso",
+            "weather": "The coastal area of the province is warm in contrast with its interior which is colder especially during the night. Mean annual temperature is recorded at 27o C.",
+            "image": "https://blogger.googleusercontent.com/img/a/AVvXsEiCsS2jpusrUANyTwpTMMgI3deHlK6hp7eWiLTYfJ6WVKU_cRnDaMkHplEjBiHFlxhTEzqYcPN1Q6RvTIBaZS77IvDp_x33nM5AuodGUN2mKrQmbandX-Cq008wIgDAAgHr23OnkcVadynKnSGSoCevXw8hPfHQV1ilUGyR9ixg-3Aml_UtQ56UNZyy=s16000"
+                
+            
+        },
+
+        {
+            "id": 3,
+            "country": "Philippines",
+            "city": "Cebu",
+            "caption": "Finest White Sand Island Hopping",
+            "category": [
+                "Beach"
+            ],
+            "trivia": "Cebu City was the first Spanish settlement in the Philippines.  In 1521, Portuguese explorer Ferdinand Magellan arrived in Cebu to claim the archipelago for Spain.",
+            "languages": "Bisaya",
+            "currency": "Philippine Peso",
+            "weather": "The climate in Cebu City is hot, oppressive, windy, and overcast. Over the course of the year, the temperature typically varies from 75°F to 90°F",
+            "image": "https://gttp.imgix.net/349713/x/0/boat-from-marlin-s-beach-resort-seen-at-the-beach-front-of-bantayan-island-in-cebu.jpg?auto=format%2Ccompress&crop=faces%2Cedges%2Ccenter&bg=%23fff&fit=crop&q=35&h=811&dpr=1"
+                
+            
+        },
+
+        {
+            "id": 4,
+            "country": "Philippines",
+            "city": "Tagaytay",
+            "caption": "Beautiful Taal Volcano Lake View",
+            "category": [
+                "Volcano"
+            ],
+            "trivia": "Another must-see in Tagaytay is the Puzzle Mansion, which houses the largest collection of jigsaw puzzles, and has been featured in the Guinness Book of World Records.",
+            "languages": "Tagalog, Bicolano",
+            "currency": "Philippine Peso",
+            "weather": "Tagaytay has warm temperatures year round ranging between 29°C (85°F) and 33°C (92°F)",
+            "image": "https://i.pinimg.com/originals/e4/ff/fb/e4fffbbe3f6daaf73d5112cd133ec7b1.jpg"
+                
+            
+        },
+
+        {
+            "id": 5,
+            "country": "Philippines",
+            "city": "Palawan",
+            "caption": "2022 Best Place To Visit",
+            "category": [
+                "Island"
+            ],
+            "trivia": "Palawan is a long island located just off the western flank of the Philippines and a paradise from end to end. Best known for its bright blue waters that contrast against the karst stone cliffs of the island, this is one of the most popular resort destinations in the Philippines.",
+            "languages": "Tagalog, Ilonggo",
+            "currency": "Philippine Peso",
+            "weather": "The temperature in Palawan averages between 75°F and 84°F (24°C-29°C) in both dry and wet season.",
+            "image": "https://www.remotelands.com/travelogues/app/uploads/2019/07/Palawan-02.jpg"
+                
+            
+        },
+
+        {
+            "id": 6,
+            "country": "Greece",
+            "city": "Santorini",
+            "caption": "A Slice Of Paradise!",
+            "category": [
+                "Island"
+            ],
+            "trivia": "Santorini is one of the Cyclades islands in the Aegean Sea. It was devastated by a volcanic eruption in the 16th century BC, forever shaping its rugged landscape.",
+            "languages": "Greek",
+            "currency": "Euro",
+            "weather": "An average high-temperature of 28°C (82.4°F) and an average low-temperature of 22°C (71.6°F).",
+            "image": "https://i.pinimg.com/originals/87/bb/93/87bb93614f56170427c49facac3d4926.png"
+                
+            
+        },
+
+        {
+            "id": 7,
+            "country": "Italy",
+            "city": "Rome",
+            "caption": "Rome Was Not Built In A Day!",
+            "category": [
+                "Landmark"
+            ],
+            "trivia": "Italy's capital city, Rome is also known for a history that dates back to the eras of Octavian, Julius Caesar and Hadrian, among others. Left behind are structures like the Pantheon, the Roman Forum and dozens of churches, among other historic gems.",
+            "languages": "Italian",
+            "currency": "Euro",
+            "weather": "Rome has a Mediterranean climate with cool winters and warm and hot summers. The temperatures can vary with lows of 2°C in January to the highs of 30°C.",
+            "image": "https://a.cdn-hotels.com/gdcs/production151/d623/a8b25d0d-64d5-402f-99f5-a58f483c38c6.jpg?impolicy=fcrop&w=800&h=533&q=medium"
+                
+            
+        },
+
+        {
+            "id": 8,
+            "country": "Russia",
+            "city": "Moscow",
+            "caption": "Most iconic landmark, St. Basil Cathedral And Its Fairytale-Castle Spires.",
+            "category": [
+                "Landmark"
+            ],
+            "trivia": "Moscow claims the largest number of billionaires in the world. Per Forbes, there are 84 billionaires in the city.",
+            "languages": "Russian",
+            "currency": "Russian Ruble",
+            "weather": "With an average high-temperature of 24.3°C (75.7°F) and an average low-temperature of 14.4°C (57.9°F)",
+            "image": "https://a.cdn-hotels.com/gdcs/production29/d1375/234f7170-c9f4-4cee-a372-1a198e388483.jpg?impolicy=fcrop&w=800&h=533&q=medium"
+                
+            
+        },
+
+        {
+            "id": 9,
+            "country": "Netherlands",
+            "city": "Amsterdam",
+            "caption": "A Bustling Beauty Of History, Culture And Entertertainment.",
+            "category": [
+                "Scenic"
+            ],
+            "trivia": "If you ever dreamt of living on a houseboat, Amsterdam is the city for you! With over 165 canals, it is possible to travel 100 kilometers (60 miles) on the water in the city limits.",
+            "languages": "Dutch",
+            "currency": "Euro",
+            "weather": "The weather in Amsterdam is fairly mild during wintertime. However temperatures can drop below freezing.",
+            "image": "https://media.timeout.com/images/105504583/750/422/image.jpg"
+                
+            
+        },
+
+        {
+            "id": 10,
+            "country": "Brazil",
+            "city": "Rio De Janeiro",
+            "caption": "Christ the Redemeer statue stands 98 ft tall, overlooking the city of Rio De Janeiro.",
+            "category": [
+                "Scenic"
+            ],
+            "trivia": "Rich cultural history includes the creation and popularization of Bossa Nova. Translated, Bossa Nova means “new trend.” It is a lively mix of jazz and samba that came to life in the 1950s and 1960s.",
+            "languages": "Portuguese",
+            "currency": "Real",
+            "weather": "In Rio de Janeiro, the summers are short, hot, oppressive, wet, and mostly cloudy and the winters are long, comfortable, humid, and mostly clear.",
+            "image": "https://facts.net/wp-content/uploads/2015/02/Christ-the-Redeemer-Statue.jpg"
+                
+            
+        },
+
+        {
+            "id": 11,
+            "country": "Mexico",
+            "city": "Cabo San Lucas",
+            "caption": "Riu Palace Cabo San Lucas Overlooks A stunning White Sand Beach Ensuring Your Vacation Will Be An Unforgettable One.",
+            "category": [
+                "Scenic"
+            ],
+            "trivia": "Starting in early December and continuing through mid-March, hundreds of whales migrate 6,000 miles from the frigid waters of the Arctic Ocean to the warm, calm waters surrounding the Baja Peninsula. Balmy weather, ideal salinity and abundant marine life make the bays and lagoons around Los Cabos the perfect place for whales to birth and rear their young.",
+            "languages": "Spanish",
+            "currency": "Mexican Peso",
+            "weather": "In Cabo San Lucas, the summers are long, hot, oppressive, and mostly cloudy and the winters are comfortable, dry, and partly cloudy.",
+            "image": "https://ak-d.tripcdn.com/images/0220c120009lkj88b0606_R_1100_824_R5_Q70_D.jpg"
+                
+            
+        },
+
+        {
+            "id": 12,
+            "country": "UAE",
+            "city": "Dubai",
+            "caption": "Dubai, With All Of The Glitz And Glamour Rose In The Heart Of The Desert.",
+            "category": [
+                "Landmark"
+            ],
+            "trivia": "The Dubai Police has way more pizzazz than any police force in the world. They have a range of supercars such as the exotic Bugatti, Ferrari, Bentley, Lamborghini, Camaro, Mercedes and many more at their disposal.",
+            "languages": "Arabic",
+            "currency": "Dirham",
+            "weather": "In Dubai, the summers are long, sweltering, oppressive, arid, and partly cloudy and the winters are comfortable, dry, and mostly clear.",
+            "image": "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/74/2f/fa.jpg"
+                
+            
+        }
+    ]
+}          
