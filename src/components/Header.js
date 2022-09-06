@@ -1,17 +1,16 @@
 import React from "react";
+import Logo from '../images/postagramimg.jpg'
 
 
 function Header() {
 
    
-    const appClass = false ? "App dark" : "App light"
-  
+   
     return (
-      <div className={appClass}>
+      <div className="header">
         <header>
-            <h2>Postagram</h2>
+            <img id='logoImg' src={Logo} alt="logoImg" />
           
-          <button>Dark Mode</button>
         </header>
         
       </div>

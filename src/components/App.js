@@ -1,6 +1,7 @@
 import React,{useState, useEffect} from 'react'
 import { Route, Switch} from "react-router-dom"
 import Header from './Header';
+import NavBar from "./NavBar";
 
 function App() {
   const [postcards, setPostcards] = useState([])
@@ -16,8 +17,12 @@ function App() {
     <div>
       
       <Header />
+      <NavBar />
       
-      
+    <Switch>
+    
+    
+    </Switch> 
     </div>
   );
 }
