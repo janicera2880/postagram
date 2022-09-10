@@ -15,25 +15,3 @@ body {
  
 }
 
-.navbar {
-  display:flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.navbar a {
-  float: left;
-  padding: 12px;
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.navbar a:hover {
-  background-color: #000;
-}
-
-.active {
-  background-color: #04AA6D;
-}
-

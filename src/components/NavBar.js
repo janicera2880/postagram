@@ -9,7 +9,7 @@ function NavBar () {
             <nav>
                 <Link to="/">Home</Link>
                 <Link to="/Postcards">Search Postcard</Link>
-                <Link to='/Postcardform'>Upload Postcard</Link>
+                <Link to='/Postcardform'>Upload New Postcard</Link>
             </nav>
         </div>
     )
