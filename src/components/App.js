@@ -10,7 +10,7 @@ function App() {
     fetch("http://localhost:3000/postcards")
     .then(response => response.json())
     .then(data => setPostcards(data))
-  }, [])
+  }, []);
 
 
   return (

@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useState} from "react";
+
 
 function PostCard ({caption, city, country, trivia, image}){
     const [favorite, setFavorite] = useState(false)
