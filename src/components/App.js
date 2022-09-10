@@ -1,7 +1,6 @@
 import React,{useState, useEffect} from 'react'
-import { Route, Switch} from "react-router-dom"
 import Header from './Header';
-import NavBar from "./NavBar";
+
 
 
 function App() {
@@ -15,17 +14,12 @@ function App() {
 
 
   return (
-    <div>
-      
+    <div className="app">
       <Header />
-      <NavBar />
-      
-    <Switch>
-    
-    
-    </Switch> 
+      {postcards.length ? <PostCardContainer postcards={postcards}/> : null}
     </div>
   );
 }
 
 export default App;
+
