@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from '../images/postagramimg.jpg'
+import Logo from '../images/postagramlogo.png'
 
 
 function Header() {

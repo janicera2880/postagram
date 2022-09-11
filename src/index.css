@@ -1,5 +1,5 @@
 body {
-  background: rgb(232, 234, 235);
+  background: rgb(226, 202, 219);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
 }
@@ -10,8 +10,9 @@ body {
 }
 
 #headerImg {
-  width: 600px;
-  height: 600px;
+  width: 700px;
+  height: 700px;
+  text-align: center;
  
 }
 

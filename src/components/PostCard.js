@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 
 
-function PostCard ({caption, city, country, trivia, image}){
+function PostCard ({caption, city, country, trivia, image, category}){
     const [favorite, setFavorite] = useState(false)
 
     function handleFavorite(){

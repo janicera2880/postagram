@@ -7,7 +7,7 @@ function PostCardContainer({postcards}) {
         return <PostCard image={postcard.image} caption={postcard.caption} city={postcard.city} country={postcard.country}/>
     })
     return (
-        <ul classNam="cards">{postCards}</ul>
+        <ul className="cards">{postCards}</ul>
     );
 }
 export default PostCardContainer;

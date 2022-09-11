@@ -1,5 +1,6 @@
-import React,{useState, useEffect} from 'react'
+import React,{useState, useEffect} from 'react';
 import Header from './Header';
+import PostCardContainer from './PostCardContainer';
 
 
 
@@ -9,7 +10,7 @@ function App() {
   useEffect(() => {
     fetch("http://localhost:3000/postcards")
     .then(response => response.json())
-    .then(data => setPostcards(data))
+    .then(postcardData => setPostcards(postcardData));
   }, []);
 
 
