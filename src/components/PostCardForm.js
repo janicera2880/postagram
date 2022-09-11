@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import PostCardList from "./PostCardList";
 
 function PostCardForm({onAddPostcard}) {
 
