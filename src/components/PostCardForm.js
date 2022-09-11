@@ -33,6 +33,9 @@ function PostCardForm({onAddPostcard}) {
       .then(response => response.json())
       .then(finalForm => {
         onAddPostcard(finalForm)
+      })
+  }
+  
   return (
     <div className="new-postcard-form">
       <h2>Upload New PostCard</h2>
