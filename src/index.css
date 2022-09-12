@@ -1,5 +1,5 @@
 :root {
-  --green: rgb(39, 189, 39);
+  --green: rgb(189, 150, 174);
 }
 
 * {
@@ -25,7 +25,7 @@ button {
 
 button.primary {
   background-color: var(--green);
-  color: white;
+  color: rgb(199, 183, 183);
 }
 
 .app {
@@ -54,7 +54,7 @@ main {
 .new-postcard-form {
   padding: 2rem 1rem;
   margin: 2rem 0;
-  background-color: rgba(181, 250, 181, 0.5);
+  background-color: rgba(172, 218, 172, 0.5);
 }
 
 .new-postcard-form form {
