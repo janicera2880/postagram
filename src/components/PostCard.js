@@ -10,7 +10,7 @@ function PostCard ({caption, city, country, trivia, image}){
 
     return(
         <li classname="card">
-            <img src={image} alt={city}/>
+            <img src={image} width="400" height="400" alt={city}/>
             <h4>{caption}</h4>
             <p>{city}</p>
             <p>{country}</p>
