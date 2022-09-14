@@ -4,6 +4,7 @@ import PostCardContainer from './PostCardContainer';
 
 
 
+
 function App() {
   const [postcards, setPostcards] = useState([])
 
@@ -18,6 +19,7 @@ function App() {
     <div className="app">
       <Header />
       {postcards.length ? <PostCardContainer postcards={postcards}/> : null}
+   
     </div>
   );
 }
