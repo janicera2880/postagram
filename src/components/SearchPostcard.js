@@ -1,6 +1,6 @@
 import React from "react";
 
-function Search({handleSearchChange}) {
+function SearchPostcard({handleSearchChange}) {
 
   return (
     <div className="searchbar">
@@ -15,4 +15,4 @@ function Search({handleSearchChange}) {
   );
 }
 
-export default Search;
+export default SearchPostcard;
