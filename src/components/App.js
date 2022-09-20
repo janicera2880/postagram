@@ -1,26 +1,40 @@
-import React,{useState, useEffect} from 'react';
-import Header from './Header';
-import PostCardContainer from './PostCardContainer';
+import React,{useState} from 'react';
+import { Switch, Route } from "react-router-dom";
+import NavBar from "./NavBar";
+import Home from "./Home";
+import PostCardForm from "./PostCardForm";
+import SearchPostcard from "./SearchPostcard";
+import PostCard from './PostCard';
 
 
 
 
 function App() {
-  const [postcards, setPostcards] = useState([])
-
-  useEffect(() => {
-    fetch("http://localhost:3000/postcards")
-    .then(response => response.json())
-    .then(postcardData => setPostcards(postcardData));
-  }, []);
-
-
+    
   return (
-    <div className="app">
-      <Header />
-      {postcards.length ? <PostCardContainer postcards={postcards}/> : null}
-   
-    </div>
+      <div>
+          <NavBar />
+          <Switch>
+              <Route path="/home">
+                  <Home />
+              </Route>
+              <Route exact path="/postcardform">
+                  <PostCardForm />
+              </Route>
+              <Route path="/searchpostcard">
+                  <SearchPostcard />
+              </Route>
+              <Route path="/postcard/:id">
+                  <PostCard />
+              </Route>
+              <Route exact path="/">
+                  <Home />
+              </Route>
+              <Route path="*">
+                  <h1>404 not found</h1>
+              </Route>
+          </Switch>
+      </div>
   );
 }
 

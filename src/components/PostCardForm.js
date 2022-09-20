@@ -1,15 +1,16 @@
 import React, {useState} from "react";
-import PostCardList from "./PostCardList";
+
 
 function PostCardForm({onAddPostcard}) {
 
   const [caption, setCaption] = useState("")
-  conbst [image, setImage] = useState("")
+  const [image, setImage] = useState("")
   const [city, setCity] = useState ("")
   const [country, setCountry] = useState("")
   const [category, setCategory] = useState("")
   const [trivia, setTrivia] = useState ("")
   const [language, setLanguage] = useState ("")
+
 
   function handleSubmit(event) {
     event.preventDefault()
