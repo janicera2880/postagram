@@ -5,12 +5,14 @@ function SearchPostcard({handleSearchChange}) {
   return (
     <div className="searchbar">
       <label htmlFor="search">Search Postcards:</label>
-      <input
+      <select
         type="text"
-        id="search"
-        placeholder="Type a destination to search..."
-        onChange= {(e) => handleSearchChange(e)}
-      />
+        onChange= {(e) => handleSearchChange(e)}>
+       <option value="All">All</option>
+          <option value="City">City</option>
+          <option value="Country">Country</option>
+          <option value="Category">Category</option>
+      </select>
     </div>
   );
 }

@@ -22,18 +22,13 @@ function App() {
               <Route exact path="/postcardform">
                   <PostCardForm />
               </Route>
-              <Route path="/searchpostcard">
-                  <SearchPostcard />
-              </Route>
-              <Route path="/postcard/:id">
-                  <PostCard />
-              </Route>
               <Route exact path="/">
                   <Home />
               </Route>
-              <Route path="*">
-                  <h1>404 not found</h1>
+              <Route path="/searchpostcard">
+                  <SearchPostcard />
               </Route>
+              
           </Switch>
       </div>
   );
