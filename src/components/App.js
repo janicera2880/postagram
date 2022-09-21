@@ -5,7 +5,7 @@ import Home from "./Home";
 import Header from "./Header"
 import PostCardForm from "./PostCardForm";
 import SearchPostcard from "./SearchPostcard";
-import PostCard from './PostCard';
+import Footer from "./Footer"
 
 
 
@@ -30,6 +30,7 @@ function App() {
               </Route>
               
           </Switch>
+          <Footer />
       </div>
   );
 }
