@@ -8,7 +8,7 @@ function SearchPostcard({handleSearchChange}) {
       <select
         type="text"
         onChange= {(e) => handleSearchChange(e)}>
-       <option value="All">All</option>
+       <option value="All">Search All</option>
           <option value="City">City</option>
           <option value="Country">Country</option>
           <option value="Category">Category</option>

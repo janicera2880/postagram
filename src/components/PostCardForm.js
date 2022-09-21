@@ -40,7 +40,7 @@ function PostCardForm({onAddPostcard}) {
   
   return (
     <div className="new-postcard-form">
-      <h2>Upload New PostCard</h2>
+      <h4>Upload New PostCard</h4>
       <form onSubmit= {handleSubmit}>
 <label>
     Caption:
@@ -77,7 +77,7 @@ function PostCardForm({onAddPostcard}) {
         <input type="text" name="language" placeholder="Language" value = {language} 
         onChange={e => setLanguage(e.target.value)} />
 </label>
-        <button type="submit">Upload Now</button>
+        <button type="submit"><h3>Upload</h3></button>
       </form>
     </div>
   );

@@ -1,15 +1,16 @@
 :root {
-  --green: rgb(189, 150, 174);
+  --green: rgb(31, 163, 53);
 }
 
 * {
-  margin: 0;
-  padding: 0;
+  margin: 10;
+  padding: 10;
   box-sizing: border-box;
 }
 
 body {
   font-family: "Playfair Display", serif;
+  background-color: hsl(184, 68%, 55%);
 }
 
 h2 {
@@ -41,6 +42,11 @@ header h1 {
 }
 
 .logo {
+  text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
   font-size: 1.25em;
   padding-left: 0.5rem;
   color: transparent;
@@ -54,12 +60,12 @@ main {
 .new-postcard-form {
   padding: 2rem 1rem;
   margin: 2rem 0;
-  background-color: rgba(172, 218, 172, 0.5);
+  background-color: rgba(198, 207, 212, 0.5);
 }
 
 .new-postcard-form form {
-  display: flex;
-  justify-content: center;
+  display:flow-root;
+  justify-content:baseline;
 }
 
 .new-postcard-form input {
@@ -68,7 +74,8 @@ main {
 }
 
 .new-postcard-form button {
-  width: 150px;
+  text-align: center;
+  width: 200px;
 }
 
 .searchbar {
