@@ -10,7 +10,7 @@
 
 body {
   font-family: "Playfair Display", serif;
-  background-color: hsl(184, 68%, 55%);
+  background-color: hsl(196, 91%, 35%);
 }
 
 h2 {
@@ -26,7 +26,7 @@ button {
 
 button.primary {
   background-color: var(--green);
-  color: rgb(199, 183, 183);
+  color: rgb(62, 124, 153);
 }
 
 .app {
@@ -58,18 +58,18 @@ main {
 }
 
 .new-postcard-form {
-  padding: 2rem 1rem;
-  margin: 2rem 0;
-  background-color: rgba(198, 207, 212, 0.5);
+  padding: 5rem 30rem;
+  margin: 3rem 0;
+  background-color: rgba(6, 107, 165, 0.5);
 }
 
 .new-postcard-form form {
-  display:flow-root;
+  display:contents;
   justify-content:baseline;
 }
 
 .new-postcard-form input {
-  margin-right: 2rem;
+  margin-right: 100rem;
   flex: 1;
 }
 
@@ -78,11 +78,7 @@ main {
   width: 200px;
 }
 
-.searchbar {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-}
+
 
 label {
   font-weight: bold;
@@ -108,6 +104,7 @@ input:focus {
   list-style: none;
 }
 
+
 .card {
   margin: 1rem;
 }
@@ -120,26 +117,12 @@ input:focus {
   margin-top: 0.5rem;
 }
 
-@media (min-width: 768px) {
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .card {
-    width: calc(33% - 2rem);
-  }
+.navbar {
+  padding: 1rem;
+  height: 60px;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  display:flex;
+  box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
 }
-
-@media (min-width: 1024px) {
-  .card {
-    width: calc(25% - 2rem);
-  }
-}
-
-@media (min-width: 1200px) {
-  .card {
-    width: calc(20% - 2rem);
-  }
-}
-
