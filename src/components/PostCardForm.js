@@ -24,7 +24,7 @@ function PostCardForm({onAddPostcard}) {
       trivia: trivia,
       language: language
     }
-    fetch("http://localhost:3000/postcards", {
+    fetch("http://localhost:3001/postcards", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

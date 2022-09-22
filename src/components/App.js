@@ -25,7 +25,7 @@ function App() {
               <Route exact path="/">
                   <Home />
               </Route>
-              <Route path="/searchpostcard">
+              <Route path="/postcards">
                   <SearchPostcard />
               </Route>
               
