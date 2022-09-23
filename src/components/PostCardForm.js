@@ -1,7 +1,10 @@
 import React, {useState} from "react";
+import { useHistory } from "react-router-dom"
+
 
 
 function PostCardForm({onAddPostcard}) {
+  const history = useHistory();
 
   const [caption, setCaption] = useState("")
   const [image, setImage] = useState("")
@@ -36,6 +39,7 @@ function PostCardForm({onAddPostcard}) {
       .then(finalForm => {
         onAddPostcard(finalForm)
       })
+      history.push("/")
   }
   
   return (
