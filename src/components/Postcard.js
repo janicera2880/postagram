@@ -2,7 +2,7 @@ import React, {useState} from "react";
 
 
 
-function Postcard ({caption, city, country, languages, currency, weather, image}){
+function Postcard ({caption, city, country, image}){
     const [favorite, setFavorite] = useState(false)
 
     function handleFavorite(){
@@ -21,13 +21,11 @@ function Postcard ({caption, city, country, languages, currency, weather, image}
           ) : (
             <button onClick={handleFavorite} className="emoji-button favorite">Hit Like!✉️</button>
           )}
-            <p>{currency}</p>
-            <p>{languages}</p>
-            <p>{weather}</p>
+            
             
         </div>
             
         </li>
-    )
+    );
 }
 export default Postcard;
