@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { Link } from "react-router-dom";
+
 
 
 function PostCard ({id, caption, city, country, languages, currency, weather, image}){
@@ -24,7 +24,7 @@ function PostCard ({id, caption, city, country, languages, currency, weather, im
             <p>{currency}</p>
             <p>{languages}</p>
             <p>{weather}</p>
-            <Link to={`/Home/${id}`}>View More Postcards!</Link>
+            
         </div>
             
         </li>
