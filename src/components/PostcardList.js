@@ -1,7 +1,7 @@
 import React from "react";
 import PostCard from "./PostCard";
 
-function PostCardList({postcards}) {
+function PostcardList({postcards}) {
 
   const postcardList = postcards.map((postcards) =>
     <PostCard
@@ -19,4 +19,4 @@ function PostCardList({postcards}) {
   );
 }
 
-export default PostCardList;
+export default PostcardList;

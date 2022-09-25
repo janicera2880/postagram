@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom"
 
 
 
-function PostCardForm({onAddPostcard}) {
+function PostcardForm({onAddPostcard}) {
   const history = useHistory();
 
   const [caption, setCaption] = useState("")
@@ -87,4 +87,4 @@ function PostCardForm({onAddPostcard}) {
   );
 }
 
-export default PostCardForm;
+export default PostcardForm;

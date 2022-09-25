@@ -2,7 +2,7 @@ import React, {useState} from "react";
 
 
 
-function PostCard ({id, caption, city, country, languages, currency, weather, image}){
+function Postcard ({caption, city, country, languages, currency, weather, image}){
     const [favorite, setFavorite] = useState(false)
 
     function handleFavorite(){
@@ -30,4 +30,4 @@ function PostCard ({id, caption, city, country, languages, currency, weather, im
         </li>
     )
 }
-export default PostCard;
+export default Postcard;
