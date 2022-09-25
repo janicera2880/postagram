@@ -1,20 +1,20 @@
 import React from "react";
-import Logo from '../images/postagramimg.jpg'
 
 
-function Header() {
+
+function Header({isDarkMode, onToggleDarkMode}) {
 
    
    
     return (
-      <div className="logo">
-        <header>
-            <img id='logoImg' src={Logo} alt="logoImg" />
-          
-        </header>
-        
+      <header>
+      <h1>POSTAGRAM</h1>
+      <div className="toggle-switch">
+        <input type="checkbox" id="toggle-dark-mode" checked={isDarkMode} onChange={e => onToggleDarkMode(e.target.checked)} />
+        <label htmlFor="toggle-dark-mode"></label>
       </div>
-    );
-  }
+    </header>
+  );
+}
   
   export default Header;

@@ -1,10 +1,10 @@
 import React from "react";
-import PostCard from "./PostCard";
+import Postcard from "./Postcard";
 
 function PostcardList({postcards}) {
 
   const postcardList = postcards.map((postcards) =>
-    <PostCard
+    <Postcard
     key={postcards.id}
     caption={postcards.caption}
     image={postcards.image}
