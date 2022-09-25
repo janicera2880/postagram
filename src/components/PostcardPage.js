@@ -4,14 +4,37 @@ import PostcardList from "./PostcardList";
 import SearchPostcard from "./SearchPostcard";
 import PostcardFilter from "./PostcardFilter";
 
-function PostcardPage ({postcards}) {
-    
-    const postCards = postcards.map((postcard) => {
-        return <PostCard image={postcard.image} caption={postcard.caption} city={postcard.city} country={postcard.country} trivia={postcard.trivia}/>
-    })
+function PostcardPage() {
+    const [postcards, setPostcards] = useState([]);
+    const [search, setSearch] = useState("");
+  
+    useEffect(() => {
+      fetch("http://localhost:3001/postcards")
+        .then((r) => r.json())
+        .then((postcardsArray) => {
+          setPostcards(postcardsArray);
+        });
+    }, []);
+  
+    function onAddPostcards(newPostcard) {
+      const updatedPostcardsArray = [...postcards, newPostcard];
+      setPostcards(updatedPostcardsArray);
+    }
+  
+    const displayedPostcards = postcards.filter((postcard) => {
+      return postcard.category.toLowerCase().includes(search.toLowerCase());
+    });
+  
     return (
-        <ul className="cards">{postCards}</ul>
+      <main>
+        <PostcardForm onAddPostcards={onAddPostcards} />
+        <SearchPostcard search={search} onSearchChange={setSearch} />
+        <PostcardList
+          postcards={displayedPostcards}
+        />
+      </main>
     );
-}
-export default PostCardContainer;
+  }
+  
+  export default PostcardPage;
 
