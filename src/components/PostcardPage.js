@@ -7,6 +7,7 @@ import PostcardFilter from "./PostcardFilter";
 function PostcardPage() {
     const [postcards, setPostcards] = useState([]);
     const [search, setSearch] = useState("");
+    const [selectedCategory, setSelectedCategory] = useState("All");
   
     useEffect(() => {
       fetch("http://localhost:3001/postcards")
@@ -23,16 +24,25 @@ function PostcardPage() {
   
     const displayedPostcards = postcards.filter((postcard) => {
       return postcard.category.toLowerCase().includes(search.toLowerCase());
+
+      function onFilterChange(category) {
+        setSelectedCategory(category);
+      }
+    
+      const postcardsToDisplay = postcards.filter((postcards) => {
+        if (selectedCategory === "All") return true;
+    
+        return postcards.category === selectedCategory;
+      });
     });
   
     return (
-      <main>
+     
         <PostcardForm onAddPostcards={onAddPostcards} />
         <SearchPostcard search={search} onSearchChange={setSearch} />
-        <PostcardList
-          postcards={displayedPostcards}
-        />
-      </main>
+        <PostcardList postcards={displayedPostcards} />
+        <POstcardFilter category={selectedCategory} onFilterChange={onFilterChange} />
+     
     );
   }
   
