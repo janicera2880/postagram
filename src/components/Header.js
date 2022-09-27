@@ -8,7 +8,7 @@ function Header({isDarkMode, onToggleDarkMode}) {
    
     return (
       <header>
-      <h1>POSTAGRAM</h1>
+      <h1>WELCOME TO POSTAGRAM</h1>
       <div className="toggle-switch">
         <input type="checkbox" id="toggle-dark-mode" checked={isDarkMode} onChange={e => onToggleDarkMode(e.target.checked)} />
         <label htmlFor="toggle-dark-mode"></label>
