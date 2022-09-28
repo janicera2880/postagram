@@ -1,33 +1,36 @@
-import React, { useEffect, useState } from "react";
-import PostcardForm from "./PostcardForm";
-import PostcardList from "./PostcardList";
+import React, { useState } from "react";
+import Postcard from "./Postcard";
+import PostcardFilter from "./PostcardFilter";
 import SearchPostcard from "./SearchPostcard";
 
 
-function PostcardPage() {
-    const [selectedCategory, setSelectedCategory] = useState([]);
+function PostcardPage({postcards}) {
+    const [selectedCategory, setSelectedCategory] = useState("All");
     const [search, setSearch] = useState("");
    
-    useEffect(() => {
-      fetch("http://localhost:3001/postcards")
-        .then((r) => r.json())
-        .then((postcardsArray) => {
-          setPostcards(postcardsArray);
-        });
-    }, []);
+    
+    
+  
+    function onCategoryChange(event) {
+      setSelectedCategory(event.target.value)
+  }
+    function handleSearchChange(newSearch){
+    setSearch(newSearch)    
+  }
+  
+    const postcardsToDisplay = postcards.filter((postcard) => {
+      if (selectedCategory === "All") return true;
+  
+      return postcard.category === selectedCategory;
+    }).filter(postcard => postcard.category.toLowerCase().includes(search.toLowerCase()));
   
     
   
-    const displayedPostcards = postcards.filter((postcard) => {
-      return postcard.category.toLowerCase().includes(search.toLowerCase());
-
-    });  
-  
     return (
       <main>
-       
-        <SearchPostcard search={search} onSearchChange={setSearch} />
-        <PostcardList postcards={displayedPostcards} />
+        <Postcard />
+        <SearchPostcard search={handleSearchChange} onSearchChange={onCategoryChange} />
+        <PostcardFilter postcards={postcardsToDisplay} />
         
         </main>
     );

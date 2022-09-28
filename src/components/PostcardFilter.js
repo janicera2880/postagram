@@ -2,7 +2,8 @@ import React from "react";
 
 
 function Filter({category, onCategoryChange}) {
-  rreturn (
+
+  return (
     <div className="Filter">
       <select
         name="filter"
