@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom"
 
 
 
-function PostcardForm({onAddPostcard}) {
+function PostcardForm({onAddPostcards}) {
   const history = useHistory();
 
   const [caption, setCaption] = useState("")
@@ -37,7 +37,7 @@ function PostcardForm({onAddPostcard}) {
       })
       .then(response => response.json())
       .then(finalForm => {
-        onAddPostcard(finalForm)
+        onAddPostcards(finalForm)
       })
       history.push("/")
   }

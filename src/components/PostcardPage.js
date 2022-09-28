@@ -5,7 +5,7 @@ import SearchPostcard from "./SearchPostcard";
 
 
 function PostcardPage() {
-    const [postcards, setPostcards] = useState([]);
+    const [selectedCategory, setSelectedCategory] = useState([]);
     const [search, setSearch] = useState("");
    
     useEffect(() => {
@@ -16,10 +16,7 @@ function PostcardPage() {
         });
     }, []);
   
-    function onAddPostcards(newPostcard) {
-      const updatedPostcardsArray = [...postcards, newPostcard];
-      setPostcards(updatedPostcardsArray);
-    }
+    
   
     const displayedPostcards = postcards.filter((postcard) => {
       return postcard.category.toLowerCase().includes(search.toLowerCase());
@@ -28,7 +25,7 @@ function PostcardPage() {
   
     return (
       <main>
-        <PostcardForm onAddPostcards={onAddPostcards} />
+       
         <SearchPostcard search={search} onSearchChange={setSearch} />
         <PostcardList postcards={displayedPostcards} />
         

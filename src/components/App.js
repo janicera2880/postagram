@@ -11,16 +11,25 @@ import PostcardPage from "./PostcardPage";
 
 
 function App() {
-    const [isDarkMode, setIsDarkMode] = useState(true)
+    const [isDarkMode, setIsDarkMode] = useState(true);
     //console.log({ isDarkMode })//
-    const [selectedCategory, setSelectedCategory] = useState("All");
+    const [postcards, setPostcards] = useState([]);
     
-    
-    useEffect(()=> {
+    useEffect(() => {
       fetch("http://localhost:3001/postcards")
-      .then(response => response.json())
-      .then(postcards => setPostcards(postcards))
-    }, [])
+        .then((r) => r.json())
+        .then((postcards) => {
+          setPostcards(postcards);
+        });
+    }, []);
+  
+    function onAddPostcards(newPostcard) {
+      const updatedPostcards = [...postcards, newPostcard];
+      setPostcards(updatedPostcards);
+    }
+  
+    
+  
     
   return (
       <div>
@@ -30,8 +39,8 @@ function App() {
           <Home />
           <NavBar />
           <PostcardPage />
-          <PostcardList />
-         <PostcardForm />
+          <PostcardList postcards={{postcards}}/>
+         <PostcardForm uploadPostcards={onAddPostcards}/>
         </div>
               
   )
