@@ -37,15 +37,14 @@ function App() {
         <main className={isDarkMode ? "dark-mode" : ""}></main>
           
           <Header isDarkMode={isDarkMode} onToggleDarkMode={setIsDarkMode} />
-          
           <NavBar />
-          <Home />
+
           <Switch>        
         <Route exact path="/postcards">
           <PostcardPage />
         </Route>
         <Route path="/postcardform">
-        <PostcardForm uploadPostcards={onAddPostcards}/>
+          <PostcardForm uploadPostcards={onAddPostcards}/>
         </Route>
         <Route exact path="/">
           <Home />
@@ -53,7 +52,7 @@ function App() {
         <Route path="*">
           <h1>404</h1>
         </Route>
-      </Switch>
+        </Switch>
           
          
          <Footer />
