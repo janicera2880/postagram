@@ -14,16 +14,18 @@ function PostcardPage() {
         });
     }, []);
    
-    
+    function handleSearch(currentSearch) {
+      setSearch(currentSearch)
+    }
 
     const shownPostcards = postcards.filter((postcard) => {
-      return postcard.city.toLowerCase().includes(search.toLowerCase());
+      return postcard.country.toLowerCase().includes(search.toLowerCase());
     });
 
     return (
       <div className="PostcardPage">
-        <PostcardList postcards={shownPostcards}/>
-        <SearchPostcard search={search} setSearch={setSearch} />
+        <PostcardList postcards={shownPostcards}  />
+        <SearchPostcard search={search} onSearch={handleSearch} />
        
         
         </div>
