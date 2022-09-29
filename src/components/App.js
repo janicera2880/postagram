@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Route, Switch} from "react-router-dom"
 import NavBar from "./NavBar";
 import Home from "./Home";
 import Header from "./Header"
@@ -36,10 +37,25 @@ function App() {
         <main className={isDarkMode ? "dark-mode" : ""}></main>
           
           <Header isDarkMode={isDarkMode} onToggleDarkMode={setIsDarkMode} />
-          <Home />
+          
           <NavBar />
+          <Home />
+          <Switch>        
+        <Route exact path="/postcards">
           <PostcardPage />
-         <PostcardForm uploadPostcards={onAddPostcards}/>
+        </Route>
+        <Route path="/postcardform">
+        <PostcardForm uploadPostcards={onAddPostcards}/>
+        </Route>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="*">
+          <h1>404</h1>
+        </Route>
+      </Switch>
+          
+         
          <Footer />
         </div>
               

@@ -5,7 +5,7 @@ function NavBar () {
 
     return (
 
-        <div classname="navbar">
+        <div className="navbar">
             <nav>
                 <Link to="/">Home</Link>
                 <Link to="/Postcards">Search Destination</Link>

@@ -14,7 +14,7 @@ function PostcardPage() {
         });
     }, []);
    
-    function handleSearch(currentSearch) {
+    function handleSearchChange(currentSearch) {
       setSearch(currentSearch)
     }
 
@@ -24,8 +24,9 @@ function PostcardPage() {
 
     return (
       <div className="PostcardPage">
+        <SearchPostcard search={search} onSearch={handleSearchChange} />
         <PostcardList postcards={shownPostcards}  />
-        <SearchPostcard search={search} onSearch={handleSearch} />
+        
        
         
         </div>
