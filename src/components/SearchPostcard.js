@@ -1,18 +1,17 @@
 import React from "react";
 
-function SearchPostcard({handleSearchChange}) {
+function SearchPostcard({search, handleSearchChange}) {
 
   return (
     <div className="searchbar">
-      <label htmlFor="search">Search Postcards:</label>
-      <select
+       <label htmlFor="search">Search Destination:</label>
+      <input
         type="text"
-        onChange= {(e) => handleSearchChange(e)}>
-       <option value="All">Search All</option>
-          <option value="City">City</option>
-          <option value="Country">Country</option>
-          <option value="Category">Category</option>
-      </select>
+        id="search"
+        placeholder="Type here to search..."
+        value={search}
+        onChange={(e) => handleSearchChange(e.target.value)}
+      />
     </div>
   );
 }

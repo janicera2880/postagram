@@ -3,7 +3,6 @@ import NavBar from "./NavBar";
 import Home from "./Home";
 import Header from "./Header"
 import PostcardForm from "./PostcardForm";
-import PostcardList from "./PostcardList";
 import PostcardPage from "./PostcardPage";
 
 
@@ -39,7 +38,6 @@ function App() {
           <Home />
           <NavBar />
           <PostcardPage />
-          <PostcardList postcards={{postcards}}/>
          <PostcardForm uploadPostcards={onAddPostcards}/>
         </div>
               
