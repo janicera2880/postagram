@@ -2,7 +2,7 @@ import React, {useState} from "react";
 
 
 
-function Postcard ({caption, city, country, image}){
+function Postcard ({caption, city, country, image, trivia}){
     const [favorite, setFavorite] = useState(false)
 
     function handleFavorite(){
@@ -11,10 +11,11 @@ function Postcard ({caption, city, country, image}){
 
     return(
         <li classname="card">
-            <img src={image} width="600" height="400" alt={city}/>
+            <img src={image} width="500" height="300" alt={city}/>
             <h4>{caption}</h4>
             <p>{city}</p>
             <p>{country}</p>
+            <p>{trivia}</p>
             <div className="details">
           {favorite ? (
           <button  onClick={handleFavorite}  className="emoji-button favorite active">Liked💌</button>

@@ -8,8 +8,8 @@ function NavBar () {
         <div classname="navbar">
             <nav>
                 <Link to="/">Home</Link>
-                <Link to="/Postcards">Search Postcard</Link>
-                <Link to='/Postcardform'>Upload New Postcard</Link>
+                <Link to="/Postcards">Search Destination</Link>
+                <Link to='/Postcardform'>Upload New Postagram</Link>
             </nav>
         </div>
     )
