@@ -15,6 +15,7 @@ function App() {
     const [isDarkMode, setIsDarkMode] = useState(true);
     //console.log({ isDarkMode })//
     const [postcards, setPostcards] = useState([]);
+    const [newPostcard, setNewPostcard] =
     
     useEffect(() => {
       fetch("http://localhost:3001/postcards")
