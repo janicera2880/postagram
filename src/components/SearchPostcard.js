@@ -1,25 +1,17 @@
-import React, {useState} from "react";
+import React from "react";
 
-function SearchPostcard({handleSearchChange}) {
-  const [currentSearch, setCurrentSearch] = useState("")
+function SearchPostcard({search, handleChangeSearch}) {
   
-  function onSubmit(e) {
-    e.preventDefault();
-    handleSearchChange(currentSearch);
+    return (
+      <div className="search">
+        <label>Search Popular Destination</label>
+        <input
+          type="text"        
+          value={search}
+          placeholder="Type a Country to search..."
+          onChange={(event) => handleChangeSearch(event.target.value)}
+        />
+      </div>
+    );
   }
-
-  return (
-    <form className="searchbar" onSubmit={onSubmit}>
-      <input
-        type="text"
-        id="search"
-        placeholder="Search Destination..."
-        value={currentSearch}
-        onChange={(e) => setCurrentSearch(e.target.value)}
-      />
-      <button type="submit">🔍</button>
-    </form>
-  );
-}
-
 export default SearchPostcard;

@@ -15,7 +15,7 @@ function App() {
     const [isDarkMode, setIsDarkMode] = useState(true);
     //console.log({ isDarkMode })//
     const [postcards, setPostcards] = useState([]);
-    const [newPostcard, setNewPostcard] =
+    const [newPostcard, setNewPostcard] = useState ("")
     
     useEffect(() => {
       fetch("http://localhost:3001/postcards")
@@ -26,8 +26,9 @@ function App() {
     }, []);
   
     function onAddPostcards(newPostcard) {
-      const updatedPostcards = [...postcards, newPostcard];
-      setPostcards(updatedPostcards);
+      const updatedPostcards = [...postcards, newPostcard]
+      setPostcards(updatedPostcards)
+      setNewPostcard(newPostcard)
     }
   
     
