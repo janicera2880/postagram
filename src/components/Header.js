@@ -1,5 +1,5 @@
 import React from "react";
-
+import Logo from "../images/logo.png"
 
 
 function Header() {
@@ -7,12 +7,13 @@ function Header() {
    
    
     return (
-      <header>
-      <h1>WELCOME TO POSTAGRAM</h1>
+      
+      
       <div className="header">
-        
+        <img id="Logo" src={Logo} alt="Logo"/>
+      
       </div>
-    </header>
+    
   );
 }
   
