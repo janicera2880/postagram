@@ -5,48 +5,50 @@ import Home from "./Home";
 import Header from "./Header"
 import PostcardForm from "./PostcardForm";
 import PostcardPage from "./PostcardPage";
-import Footer from "./Footer";
 
 
 
 
 
 function App() {
-    const [isDarkMode, setIsDarkMode] = useState(true);
-    //console.log({ isDarkMode })//
-    const [postcards, setPostcards] = useState([]);
-    const [newPostcard, setNewPostcard] = useState ("")
-    
-    useEffect(() => {
-      fetch("http://localhost:3001/postcards")
-        .then((r) => r.json())
-        .then((postcards) => {
-          setPostcards(postcards);
-        });
-    }, []);
+  const [postcards, setPostcards] = useState([])
+  const [newPostcard, setNewPostcard] = useState({
+    caption: "",
+      image: "",
+      city: "",
+      country: "",
+      category: "",
+      trivia: "",
+      language: ""
+  })
   
-    function onAddPostcards(newPostcard) {
-      const updatedPostcards = [...postcards, newPostcard]
-      setPostcards(updatedPostcards)
-      setNewPostcard(newPostcard)
-    }
   
-    
+  useEffect(() => {
+    fetch("http://localhost:3001/postcards")
+    .then(response => response.json())
+    .then(data => setPostcards(data))
+  }, [])
+  
+  
+  function onAddPostcards(newPostcard){  
+    const updatedPostcards = [...postcards, newPostcard]
+    setPostcards(updatedPostcards)
+    setNewPostcard(newPostcard)
+  }
   
     
   return (
       <div>
-       
-          
-          <Header isDarkMode={isDarkMode} onToggleDarkMode={setIsDarkMode} />
+             
+          <Header />
           <NavBar />
 
           <Switch>        
         <Route exact path="/postcards">
-          <PostcardPage />
+          <PostcardPage newPostcard={newPostcard}/>
         </Route>
         <Route path="/postcardform">
-          <PostcardForm uploadPostcards={onAddPostcards}/>
+          <PostcardForm onAddPostcards={onAddPostcards}/>
         </Route>
         <Route exact path="/">
           <Home />
@@ -56,8 +58,6 @@ function App() {
         </Route>
         </Switch>
           
-         
-         <Footer />
         </div>
               
   )
