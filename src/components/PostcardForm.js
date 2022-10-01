@@ -39,7 +39,14 @@ function PostcardForm({onAddPostcards}) {
       .then(finalForm => {
         onAddPostcards(finalForm)
       })
-      history.push("/")
+      history.push("/postcards")
+      setCaption('')
+      setImage('')
+      setCity('')
+      setCountry('')
+      setCategory('')
+      setTrivia('')
+      setLanguage('')
   }
   
   return (
