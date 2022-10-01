@@ -10,8 +10,8 @@ function Postcard ({caption, city, country, image, trivia}){
     }
 
     return(
-        <li className="card">
-            <img src={image} width="500" height="300" alt={city}/>
+      <div className="grid-item">
+            <img src={image} width="600" height="300" alt={city}/>
             <h4>{caption}</h4>
             <p>{city}</p>
             <p>{country}</p>
@@ -25,8 +25,8 @@ function Postcard ({caption, city, country, image, trivia}){
             
             
         </div>
-            
-        </li>
+      </div>  
+       
     );
 }
 export default Postcard;

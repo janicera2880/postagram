@@ -15,7 +15,7 @@ function PostcardList({postcards}) {
   )
 
   return (
-    <ul className="cards">{postcardList}</ul>
+    <ul className="grid-container">{postcardList}</ul>
   );
 }
 

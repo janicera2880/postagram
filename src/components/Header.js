@@ -2,16 +2,15 @@ import React from "react";
 
 
 
-function Header({isDarkMode, onToggleDarkMode}) {
+function Header() {
 
    
    
     return (
       <header>
       <h1>WELCOME TO POSTAGRAM</h1>
-      <div className="toggle-switch">
-        <input type="checkbox" id="toggle-dark-mode" checked={isDarkMode} onChange={e => onToggleDarkMode(e.target.checked)} />
-        <label htmlFor="toggle-dark-mode"></label>
+      <div className="header">
+        
       </div>
     </header>
   );

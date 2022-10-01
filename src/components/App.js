@@ -36,7 +36,7 @@ function App() {
     
   return (
       <div>
-        <main className={isDarkMode ? "dark-mode" : ""}></main>
+       
           
           <Header isDarkMode={isDarkMode} onToggleDarkMode={setIsDarkMode} />
           <NavBar />
