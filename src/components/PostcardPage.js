@@ -24,7 +24,7 @@ function PostcardPage() {
 
     return (
       <div className="PostcardPage">
-        <SearchPostcard search={search} onSearch={handleChangeSearch} />
+        <SearchPostcard search={search} handleChangeSearch={handleChangeSearch} />
         <PostcardList postcards={shownPostcards}  />
         
        

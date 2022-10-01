@@ -8,7 +8,7 @@ function SearchPostcard({search, handleChangeSearch}) {
         <input
           type="text"        
           value={search}
-          placeholder="Type a Country to search..."
+          placeholder="Type a Country to search🔍..."
           onChange={(event) => handleChangeSearch(event.target.value)}
         />
       </div>
