@@ -3,7 +3,7 @@
 
 
 * {
-  margin: 50;
+  margin: 60;
   padding: 0;
 }
 /* Body */
@@ -27,8 +27,43 @@ body {
   width: 15%;
   height: 15%;
 }
+h1 {
+  font-size: 20px;
+  text-align: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+h2 {
+  font-size: 20px;
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+form {
+  margin: 10rem;
+  display: flex;
+  flex-direction:column;
+  border: 50rem;
+  padding: 1rem 40rem;
+  margin: 0rem 0;
+}
+
+input, select {
+  width: 50%; 
+  margin-bottom: 1rem;   
+}
+
+input[type="checkbox"] {
+  width:auto;
+}
+
+
+
 .search input:hover{
+  border: 10px solid #9bb1af;
+  background-color: white;
   background-color:  hsla(142, 5%, 66%, 0.918);
+ 
 }
 
 .newPostcard {
@@ -37,17 +72,17 @@ body {
   background-color: hsla(132, 14%, 67%, 0.918);
 }
 
-.new-postcard-form form {
+.newPostcard form {
   display:contents;
   justify-content:baseline;
 }
 
-.new-postcard-form input {
+.newPostcard input {
   margin-right: 10rem;
-  flex: 1;
+  flex:40em;
 }
 
-.new-postcard-form button {
+.newPostcard button {
   text-align: center;
   width: 200px;
 }
@@ -67,11 +102,6 @@ input {
   border-bottom: 2px solid rgb(141, 41, 41);
   transition: all 0.2s;
   width: 100%;
-}
-
-input:focus {
-  outline: none;
-  border-bottom: 2px solid var(--green);
 }
 
 
@@ -100,8 +130,8 @@ nav a:hover,
 nav a:active {
   display:inline-flexbox;
   padding: 10px 15px;
-  color: white;
-  border-bottom: 2px solid white;
+  color: rgb(32, 15, 15);
+  border-bottom: 2px solid rgb(214, 228, 153);
 }
 .grid-container {
   display: grid;
