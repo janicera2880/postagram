@@ -18,7 +18,7 @@ function Postcard ({caption, city, country, image, trivia}){
             <p>{trivia}</p>
             <div className="details">
           {favorite ? (
-          <button  onClick={handleFavorite}  className="emoji-button favorite active">Liked💌</button>
+          <button  onClick={handleFavorite}  className="emoji-button favorite active"><span>Liked💌</span></button>
           ) : (
             <button onClick={handleFavorite} className="emoji-button favorite">Hit Like!✉️</button>
           )}

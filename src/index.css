@@ -121,34 +121,31 @@ input {
   text-decoration: none;
   font-size: 1.2em;
   color: rgb(7, 3, 3);
-  border-bottom: 2px solid rgb(73, 70, 70);
-  transition: 0.1s;
+  transition: 3s;
   
   
  
 }
-.navbar a:hover,
-.navbar a:active {
+.navbar a:hover{
+
   color: rgb(23, 31, 22);
-  border-bottom: 2px solid rgb(132, 185, 137);
-}
-.navbar a.active {
-  color: white;
+  border-bottom: 2px solid rgb(184, 93, 93);
   background: tomato;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: hsla(141, 19%, 73%, 0.918);
-  padding: 40px;
+  background-color: hsla(155, 13%, 57%, 0.918);
+
+  padding: 0px;
 }
 .grid-item {
   height: 500px;
-  background-color: hsla(141, 19%, 73%, 0.918);
+  background-color: hsla(155, 13%, 57%, 0.918);
   display:inline-table;
  
-  border: 50px solid hsla(141, 19%, 73%, 0.918);
+  border: 50px solid hsla(155, 13%, 57%, 0.918);
   padding: 40px;
   font-size: 20px;
   text-align: center;
@@ -156,4 +153,8 @@ input {
 
 .grid-item img {
   width: 100%;
+}
+.grid-item button {
+  width: 50%;
+  font-size: medium;
 }
