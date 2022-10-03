@@ -1,11 +1,11 @@
 # Postagram
-![travel pic] (https://youmatter.world/app/uploads/sites/2/2019/11/travel-world.jpg)
+![travel pic](https://youmatter.world/app/uploads/sites/2/2019/11/travel-world.jpg)
 
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Table Of Contents 
+### Table Of Contents
 
 [Description](#description) 
 

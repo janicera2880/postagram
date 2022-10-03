@@ -224,16 +224,29 @@
       "weather": "Paris experiences mostly mild weather across four distinct seasons. Average daily highs range from 46°F (8°C) in the winter to 77°F (25°C) at the height of summer.",
       "image": "https://www.travelandleisure.com/thmb/Olylzl0cReD6hco2rg3GT-oGy0o=/1000x1000/smart/filters:no_upscale()/eiffel-tower-paris-france-EIFFEL0217-6ccc3553e98946f18c893018d5b42bde.jpg"
     },
+  
     {
-      "caption": "Picture Perfect Island Paradise",
-      "image": "https://touringhighlights.com/wp-content/uploads/2020/09/Phang-Nga-Bay-Phuket-Thailand.jpg",
-      "city": "Phuket",
-      "country": "Thailand",
-      "category": "Island",
-      "trivia": "The famous Island that used to be featured in Jame Bond sequel “The Man With The Golden Gun”. Situated in Phang Nga Bay, James Bond Island is not located in Phuket province but Phang Nga province. Also known by the name of Koh Tapu (nail island) due to its shape, the island is a major tourists attraction that tour operators do not miss to include in their itineraries. ",
-      "language": "Thai",
+      "caption": "Stay Golden, San Francisco.",
+      "image": "https://www.history.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY1Mzg0OTc4NTIyMjUyNzU0/golden-gate-bridge-gettyimages-671734928.jpg",
+      "city": "San Francisco",
+      "country": "USA",
+      "category": "Landmark",
+      "trivia": "The color of the Golden Gate Bridge is called International Orange. It wasn't a color from the original list of options. It was the primer used to protect the steel for the bridge during transit and the architect loved it more than the other options, so he selected it as the official color.",
+      "language": "English",
       "id": 16
    
-    }
-  ]
+    },
+ 
+  {
+    "caption": "Happiness is the sun setting over a beach in Hawaii.",
+    "image": "https://www.planetware.com/photos-large/USHI/hawaii-honolulu-where-to-stay-luxury-waikiki.jpg",
+    "city": "Maui, Hawaii",
+    "country": "USA",
+    "category": "Island",
+    "trivia": "Maui is home to just two volcanoes, both of which are dormant. These volcanoes are Haleakala, one of the world’s biggest dormant volcanoes, and Mauna Kahalawai.",
+    "language": "Hawaiian, English",
+    "id": 17
+ 
+  }
+]
 }

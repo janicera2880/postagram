@@ -9,9 +9,8 @@
 /* Body */
 body {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: hsla(142, 9%, 82%, 0.918);
+  background-color: hsla(155, 13%, 57%, 0.918);
 }
-
 
 /* Header */
 .header {
@@ -58,18 +57,16 @@ input[type="checkbox"] {
 }
 
 
-
 .search input:hover{
   border: 10px solid #9bb1af;
   background-color: white;
-  background-color:  hsla(142, 5%, 66%, 0.918);
- 
+  background-color:  hsla(141, 19%, 73%, 0.918);
 }
 
 .newPostcard {
   padding: 0rem 40rem;
   margin: 0rem 0;
-  background-color: hsla(132, 14%, 67%, 0.918);
+  background-color:hsla(141, 19%, 73%, 0.918);
 }
 
 .newPostcard form {
@@ -84,7 +81,7 @@ input[type="checkbox"] {
 
 .newPostcard button {
   text-align: center;
-  width: 200px;
+  width: 300px;
 }
 
 
@@ -108,44 +105,51 @@ input {
 
 .navbar {
   width: 100%;
-  background-color: hsla(99, 23%, 83%, 0.918);
+  background-color: hsla(141, 19%, 73%, 0.918);
   padding-left: 30px;
   padding-right: 30px;
-  display:block;
+  display:inline-block;
   justify-content:left;
-  align-items:baseline;
+  align-items:center;
 }
 
 .navbar a {
  
-  display:flex;
-  justify-content:left;
-  align-items:stretch;
-  font-size: 15px;
+  display: inline-block;
+  margin: 1rem;
+  padding: 0.25rem;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: rgb(7, 3, 3);
+  border-bottom: 2px solid rgb(73, 70, 70);
+  transition: 0.1s;
   
   
  
 }
-nav a:hover,
-nav a:active {
-  display:inline-flexbox;
-  padding: 10px 15px;
-  color: rgb(32, 15, 15);
-  border-bottom: 2px solid rgb(214, 228, 153);
+.navbar a:hover,
+.navbar a:active {
+  color: rgb(23, 31, 22);
+  border-bottom: 2px solid rgb(132, 185, 137);
 }
+.navbar a.active {
+  color: white;
+  background: tomato;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: hsla(142, 9%, 82%, 0.918);
+  background-color: hsla(141, 19%, 73%, 0.918);
   padding: 40px;
 }
 .grid-item {
   height: 500px;
-  background-color: hsla(142, 9%, 82%, 0.918);
+  background-color: hsla(141, 19%, 73%, 0.918);
   display:inline-table;
  
-  border: 40px solid hsla(142, 9%, 82%, 0.918);
-  padding: 50px;
+  border: 50px solid hsla(141, 19%, 73%, 0.918);
+  padding: 40px;
   font-size: 20px;
   text-align: center;
 }
