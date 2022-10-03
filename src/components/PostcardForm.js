@@ -51,7 +51,7 @@ function PostcardForm({onAddPostcards}) {
   
   return (
     <div className="newPostcard">
-      <h4>Upload New PostCard</h4>
+      <h4>Upload New Picture</h4>
       <form onSubmit= {handleSubmit}>
         <br></br>
 <label>
