@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Route, Switch} from "react-router-dom"
 import NavBar from "./NavBar";
 import Home from "./Home";
-import Header from "./Header"
+import Header from "./Header";
+import Login from "./Login";
 import PostcardForm from "./PostcardForm";
 import PostcardPage from "./PostcardPage";
 
@@ -11,8 +12,12 @@ import PostcardPage from "./PostcardPage";
 
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
   const [postcards, setPostcards] = useState([])
   const [newPostcard, setNewPostcard] = useState({
+  
+
     caption: "",
       image: "",
       city: "",
@@ -47,11 +52,14 @@ function App() {
         <Route exact path="/postcards">
           <PostcardPage newPostcard={newPostcard}/>
         </Route>
+        <Route exact path="/login">
+          <Login setIsLoggedIn={setIsLoggedIn} />
+        </Route>
         <Route path="/postcardform">
           <PostcardForm onAddPostcards={onAddPostcards}/>
         </Route>
         <Route exact path="/">
-          <Home />
+          <Home isLoggedIn={isLoggedIn}/>
         </Route>
         <Route path="*">
           <h1>404</h1>

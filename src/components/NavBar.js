@@ -9,6 +9,8 @@ function NavBar () {
             <nav>
                 <Link to="/">Home</Link>
                 <br></br>
+                <Link to="/Login">Login</Link>
+                <br></br>
                 <Link to="/Postcards">Search</Link>
                 <br></br>
                 <Link to='/Postcardform'>Upload</Link>
