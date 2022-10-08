@@ -8,7 +8,7 @@
 }
 /* Body */
 body {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   background-color: hsla(155, 13%, 57%, 0.918);
 }
 
@@ -19,7 +19,12 @@ body {
   align-items:center;
   justify-content:center;
 }
-
+.login button{
+  align-items:center;
+ 
+  width: 100%;
+  font-size: larger;
+}
 #Logo {
   justify-content: center;
   align-items:center;
@@ -29,13 +34,13 @@ body {
 h1 {
   font-size: 20px;
   text-align: center;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
 h2 {
   font-size: 20px;
   text-align: center;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
 form {
@@ -54,6 +59,12 @@ input, select {
 
 input[type="checkbox"] {
   width:auto;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
 
 
@@ -104,24 +115,27 @@ input {
 
 
 .navbar {
-  width: 100%;
-  background-color: hsla(141, 19%, 73%, 0.918);
+ 
+  background-color: hsla(155, 13%, 57%, 0.918);
+  margin-right: auto;    
+  margin-left: auto; 
   padding-left: 30px;
   padding-right: 30px;
-  display:inline-block;
-  justify-content:left;
-  align-items:center;
+
 }
 
 .navbar a {
  
-  display: inline-block;
+  display:inline-flex;
+  
+  align-items: center;
+  justify-content: center;
   margin: 1rem;
   padding: 0.25rem;
-  text-decoration: none;
+  text-decoration:none;
   font-size: 1.2em;
   color: rgb(7, 3, 3);
-  transition: 3s;
+  transition: 1s;
   
   
  
@@ -130,7 +144,7 @@ input {
 
   color: rgb(23, 31, 22);
   border-bottom: 2px solid rgb(184, 93, 93);
-  background: tomato;
+  background: rgb(233, 236, 233);
 }
 
 .grid-container {
