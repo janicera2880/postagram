@@ -8,9 +8,6 @@ import PostcardForm from "./PostcardForm";
 import PostcardPage from "./PostcardPage";
 
 
-
-
-
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -47,23 +44,23 @@ function App() {
              
           <Header />
           <NavBar />
- {/* A <Switch> looks through its children <Route>s and renders the first one that matches the current URL. */}
-          <Switch>        
-        <Route exact path="/postcards">
-          <PostcardPage newPostcard={newPostcard}/>
-        </Route>
-        <Route exact path="/login">
-          <Login setIsLoggedIn={setIsLoggedIn} />
-        </Route>
-        <Route path="/postcardform">
-          <PostcardForm onAddPostcards={onAddPostcards}/>
-        </Route>
-        <Route exact path="/">
-          <Home isLoggedIn={isLoggedIn}/>
-        </Route>
-        <Route path="*">
-          <h1>404 not found</h1>
-        </Route>
+ 
+        <Switch>        
+          <Route exact path="/postcards">
+            <PostcardPage newPostcard={newPostcard}/>
+          </Route>
+          <Route exact path="/login">
+            <Login setIsLoggedIn={setIsLoggedIn} />
+          </Route>
+          <Route path="/postcardform">
+            <PostcardForm onAddPostcards={onAddPostcards}/>
+          </Route>
+          <Route exact path="/">
+            <Home isLoggedIn={isLoggedIn}/>
+          </Route>
+          <Route path="*">
+            <h1>404 Not Found</h1>
+          </Route>
         </Switch>
           
         </div>

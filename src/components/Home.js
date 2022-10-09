@@ -5,7 +5,7 @@ import { Redirect } from "react-router-dom";
 
 function Home({ isLoggedIn }) {
   if (!isLoggedIn) return <Redirect to="/login" />;
-  
+  /* When my app run to browser instead of displaying homepage it will navigate to login page*/
   return (
     <div>
       <h2>WELCOME FELLOW POSTAGRAMERS</h2>
