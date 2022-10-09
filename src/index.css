@@ -32,7 +32,7 @@ body {
   height: 15%;
 }
 h1 {
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
@@ -42,6 +42,12 @@ h2 {
   text-align: center;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
+}
+
+p {
+  font-size: 15px;
+  text-align:center;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 form {
   margin: 10rem;
