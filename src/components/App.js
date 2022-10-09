@@ -47,7 +47,7 @@ function App() {
              
           <Header />
           <NavBar />
-
+ {/* A <Switch> looks through its children <Route>s and renders the first one that matches the current URL. */}
           <Switch>        
         <Route exact path="/postcards">
           <PostcardPage newPostcard={newPostcard}/>
@@ -62,7 +62,7 @@ function App() {
           <Home isLoggedIn={isLoggedIn}/>
         </Route>
         <Route path="*">
-          <h1>404</h1>
+          <h1>404 not found</h1>
         </Route>
         </Switch>
           
