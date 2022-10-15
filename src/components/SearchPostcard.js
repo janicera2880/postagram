@@ -12,6 +12,8 @@ function SearchPostcard({search, handleChangeSearch}) {
           type="text"        
           value={search}
           placeholder="Type a Country to search🔍..."
+          
+          //onChange attribute fires the moment when the value of the element is changed
           onChange={(event) => handleChangeSearch(event.target.value)}
         />
       </div>
