@@ -72,11 +72,16 @@ input[type="checkbox"] {
   margin-right: auto;
   width: 40%;
 }
-
+.search input[type=text]{
+  width:500px;
+  height:25px;
+  border-radius:50px;
+  border: none;
+}
 
 .search input:hover{
-  border: 10px solid #9bb1af;
-  background-color: white;
+  border: 5px solid #9bb1af;
+  background-color: hsla(141, 19%, 73%, 0.918);
   background-color:  hsla(141, 19%, 73%, 0.918);
 }
 
@@ -172,8 +177,18 @@ input {
 
 .grid-item img {
   width: 100%;
+  border: 8px solid #d5f0ee;
 }
 .grid-item button {
-  width: 50%;
+  width: 40%;
   font-size: medium;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: rgb(12, 11, 11);
+  background-color: #a8c4b9;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgb(34, 44, 41);
 }
