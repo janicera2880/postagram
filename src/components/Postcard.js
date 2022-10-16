@@ -4,6 +4,7 @@ import React, {useState} from "react";
 //Initialize with false favorite will hold value of the state and setfavorite will update the value
 //Create function handleFavorite and passed on onClick eventlistener
 //passing props using object destructuring
+//use ternary operator for conditional rendering -inline if condition inside jsx
 
 function Postcard ({caption, city, country, image, trivia}){
     const [favorite, setFavorite] = useState(false)
@@ -21,6 +22,7 @@ function Postcard ({caption, city, country, image, trivia}){
             <p>{trivia}</p>
             
             <div className="details">
+              
           {favorite ? (
           <button  onClick={handleFavorite}  className="emoji-button favorite active"><span>Liked💌</span></button>
           ) : (

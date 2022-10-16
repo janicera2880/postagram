@@ -7,6 +7,10 @@ import Login from "./Login";
 import PostcardForm from "./PostcardForm";
 import PostcardPage from "./PostcardPage";
 
+// For a variable that changes! we want to use state.
+//Store controlled form state in Parent component
+//Use callback functions as props to update state in parent component
+//Send a callback function as props from App to its Child
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -31,7 +35,7 @@ function App() {
     .then(data => setPostcards(data))
   }, [])
   
-  
+  //Spread operator to add new postcard
   function onAddPostcards(newPostcard){  
     const updatedPostcards = [...postcards, newPostcard]
     setPostcards(updatedPostcards)
@@ -46,10 +50,10 @@ function App() {
           <NavBar />
  
         <Switch>        
-          <Route exact path="/postcards">
+          <Route path="/postcards">
             <PostcardPage newPostcard={newPostcard}/>
           </Route>
-          <Route exact path="/login">
+          <Route path="/login">
             <Login setIsLoggedIn={setIsLoggedIn} />
           </Route>
           <Route path="/postcardform">
