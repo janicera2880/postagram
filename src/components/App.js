@@ -16,17 +16,9 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const [postcards, setPostcards] = useState([])
-  const [newPostcard, setNewPostcard] = useState({
-  
+ 
 
-    caption: "",
-      image: "",
-      city: "",
-      country: "",
-      category: "",
-      trivia: "",
-      language: ""
-  })
+   
   
   
   useEffect(() => {
@@ -39,7 +31,7 @@ function App() {
   function onAddPostcards(newPostcard){  
     const updatedPostcards = [...postcards, newPostcard]
     setPostcards(updatedPostcards)
-    setNewPostcard(newPostcard)
+   
   }
   
     
@@ -51,7 +43,7 @@ function App() {
  
         <Switch>        
           <Route path="/postcards">
-            <PostcardPage newPostcard={newPostcard}/>
+            <PostcardPage postcards={postcards}/>
           </Route>
           <Route path="/login">
             <Login setIsLoggedIn={setIsLoggedIn} />

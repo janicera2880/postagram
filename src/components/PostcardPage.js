@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import PostcardList from "./PostcardList";
 import SearchPostcard from "./SearchPostcard";
 
@@ -7,23 +7,14 @@ import SearchPostcard from "./SearchPostcard";
 //passing empty string and empty array as initial state to the useState hook
 
 
-function PostcardPage() {
+function PostcardPage({postcards}) {
 
   
-    const [postcards, setPostcards] = useState([]);
+    
     const [search, setSearch] = useState("");
     
-    //useEffect hook to fetch some data from API
-    useEffect(() => {
-      fetch("http://localhost:3001/postcards")
-        .then((res) => res.json())
-        .then((data) => {
-           // setting state in the useEffect callback
-          setPostcards(data);
-        });
-    }, []);//also pass in an empty array of dependencies as a second argument this way side effect will
-     //only run first time the component renders
    
+    
     function handleChangeSearch(currentSearch) {
       setSearch(currentSearch)
      
