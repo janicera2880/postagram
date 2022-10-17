@@ -1,7 +1,7 @@
 import React from "react";
 
-//Passing data from SearchPostcard component to PostcardPage-parent create callback function handleChangeSearch and
-//pass callback function as props this will retrieve data from SearchPostcard function
+//Passing data from PostcardPage-parent create callback function handleChangeSearch and
+//pass callback function as props this will retrieve data 
 
 function SearchPostcard({search, handleChangeSearch}) {
   

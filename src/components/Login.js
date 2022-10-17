@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 
-//useHistory hook lets you access the history instance used by React Router- use Push method to navugate to Home after login
+//useHistory hook lets you access the history instance used by React Router- use Push method to navigate to Home after login
 //Call useHistory inside component
 //Controlled Form
 
