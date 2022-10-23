@@ -7,24 +7,19 @@ import Login from "./Login";
 import PostcardForm from "./PostcardForm";
 import PostcardPage from "./PostcardPage";
 
-//For a variable that changes! we want to use state.
-//Store controlled form state in Parent component
-//Use callback functions as props to update state in parent component
-//Send a callback function as props from App to its Child
+
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-
   const [postcards, setPostcards] = useState([])
- 
-
-   
   
   
   useEffect(() => {
     fetch("http://localhost:3001/postcards")
     .then(response => response.json())
     .then(data => setPostcards(data))
+    //console.log('new postcard added');
+    //empty array dependency to run side effect once after initial rendering
   }, [])
   
   //Spread operator to add new postcard

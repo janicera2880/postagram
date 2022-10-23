@@ -37,7 +37,7 @@ function PostcardForm({onAddPostcards}) {
       })
       .then(response => response.json())
       .then(finalForm => {
-        //console.log('new postcard added')
+       // console.log('new postcard added')
         onAddPostcards(finalForm)
       })
       history.push("/postcards")
