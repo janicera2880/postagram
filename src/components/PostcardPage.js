@@ -2,9 +2,6 @@ import React, { useState } from "react";
 import PostcardList from "./PostcardList";
 import SearchPostcard from "./SearchPostcard";
 
-//Here declare useState hook using const
-//First argument state variable are postcards and search then named the function setPostcard and setSearch
-//passing empty string and empty array as initial state to the useState hook
 
 
 function PostcardPage({postcards}) {
