@@ -1,7 +1,7 @@
 import React from "react";
 import Postcard from "./Postcard";
 
-//To display the list to the DOM, you need to use the map()  and return JSX from the callback function.
+
 function PostcardList({postcards}) {
 
   const postcardList = postcards.map((postcards) =>

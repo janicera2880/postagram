@@ -1,10 +1,6 @@
 import React, {useState} from "react";
 
-//Here I am using useState hook to update boolean state
-//Initialize with false favorite will hold value of the state and setfavorite will update the value
-//Create function handleFavorite and passed on onClick eventlistener
-//passing props using object destructuring
-//use ternary operator for conditional rendering -inline if condition inside jsx
+
 
 function Postcard ({caption, city, country, image, trivia}){
     const [favorite, setFavorite] = useState(false)

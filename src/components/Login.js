@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 
-//useHistory hook lets you access the history instance used by React Router- use Push method to navigate to Home after login
-//Call useHistory inside component
-//Controlled Form
+
 
 function Login({ setIsLoggedIn }) {
   const history = useHistory();
@@ -18,7 +16,7 @@ function Login({ setIsLoggedIn }) {
       ...formData,
       [e.target.name]: e.target.value,
     });
-   //console.log(formData);
+   
   }
 
   function handleSubmit(e) {
@@ -26,7 +24,7 @@ function Login({ setIsLoggedIn }) {
 
     setIsLoggedIn(true);
 
-    // after logging the user in, redirect to the home page!
+    
     history.push("/");
   }
 

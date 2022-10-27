@@ -8,6 +8,7 @@ import PostcardForm from "./PostcardForm";
 import PostcardPage from "./PostcardPage";
 
 
+
 function App() {
   
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -18,11 +19,10 @@ function App() {
     fetch("http://localhost:3001/postcards")
     .then(response => response.json())
     .then(data => setPostcards(data))
-    //console.log('new postcard added');
-    //empty array dependency to run side effect once after initial rendering
+    
   }, [])
   
-  //Spread operator to add new postcard
+
   function onAddPostcards(newPostcard){  
     const updatedPostcards = [...postcards, newPostcard]
     setPostcards(updatedPostcards)
@@ -32,7 +32,7 @@ function App() {
     
   return (
       <div>
-             
+          
           <Header />
           <NavBar />
  
